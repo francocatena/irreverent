@@ -1,0 +1,5 @@
+= Irreverent
+
+Rails responder customization (Inspired by Jose Valim's Crafting Rails 4 Apps Book)
+
+Released under the MIT LICENSE
