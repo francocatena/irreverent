@@ -1,5 +1,7 @@
 <% module_namespacing do -%>
 class <%= controller_class_name %>Controller < ApplicationController
+  respond_to :html, :json
+
   before_action :set_<%= singular_table_name %>, only: [:show, :edit, :update, :destroy]
 
   # GET <%= route_url %>
