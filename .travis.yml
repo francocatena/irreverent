@@ -1,4 +1,6 @@
 language: ruby
+script: 'bundle exec rake test'
 rvm:
   - 2.1.0
-script: 'bundle exec rake test'
+before_script:
+  - 'cd test/dummy; rake db:migrate RAILS_ENV=test; cd -'
