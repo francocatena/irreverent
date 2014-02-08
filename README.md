@@ -53,4 +53,4 @@ en:
       alert:  'You can not delete it'
 ```
 
-## Released under the MIT LICENSE
+#### Released under the MIT LICENSE
