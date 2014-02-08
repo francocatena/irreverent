@@ -1,7 +1,0 @@
-= Irreverent
-
-Rails responder customization (Inspired by Jose Valim's Crafting Rails 4 Apps Book)
-
-== Build status {<img src="https://travis-ci.org/francocatena/irreverent.png?branch=master" alt="Build Status" />}[https://travis-ci.org/francocatena/irreverent]
-
-Released under the MIT LICENSE
