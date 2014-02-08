@@ -24,9 +24,10 @@ Rake::TestTask.new(:test) do |t|
   t.pattern = 'test/**/*_test.rb'
   t.verbose = false
 end
+
 task default: :test
 
-Rake::TestTask.new(:console) do
+task :console do
   require 'irb'
   require 'irb/completion'
   require 'irreverent'
