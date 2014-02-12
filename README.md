@@ -43,14 +43,15 @@ You can customize it for one particular controller like this:
 
 ```yaml
 en:
-  users:
-    create:
-      notice: 'You just create a new user!'
-    update:
-      notice: 'You change it'
-    destroy:
-      notice: 'The user is no more'
-      alert:  'You can not delete it'
+  flash:
+    users:
+      create:
+        notice: 'You just create a new user!'
+      update:
+        notice: 'You change it'
+      destroy:
+        notice: 'The user is no more'
+        alert:  'You can not delete it'
 ```
 
 #### Released under the MIT LICENSE
