@@ -8,6 +8,18 @@ class FlashTest < ActionController::TestCase
     assert_equal 'User was successfully created', flash[:notice]
   end
 
+  test 'set custom notice message on successful creation' do
+    begin
+      I18n.backend.store_translations :en,
+        flash: { users: { create: { notice: 'Custom create message' } } }
+
+      post :create, user: { name: 'John Doe' }
+      assert_equal 'Custom create message', flash[:notice]
+    ensure
+      I18n.reload!
+    end
+  end
+
   test 'sets notice message on successful update' do
     user = User.create!(name: 'John Doe')
     put :update, id: user.id, user: { name: 'Another John Doe' }
