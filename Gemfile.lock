@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    irreverent (0.0.3)
+    irreverent (0.0.4)
       rails (>= 4.0)
 
 GEM
